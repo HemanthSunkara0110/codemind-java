@@ -5,19 +5,19 @@ class pattern
 	{
 		Scanner sc=new Scanner(System.in);
 		int r;
-		r=sc.nextInt();
 		
-		for(int i=1;i<=r;i++)		
+		r=sc.nextInt();
+		int k=r;
+			for(int i=1;i<=r;i++)		
 		{   
-			for(int j=1;j<=i;j++)
-			
+			for(int j=1;j<=k;j++)
 			{
-			    if(i>=j)
-				System.out.print(j);
-				else
-				System.out.print(" ");
+			    
+				System.out.print((char)(65+r-i)+" ");
+							
 			}
 			System.out.println();
+		k--;
 		}
 	}
 }
