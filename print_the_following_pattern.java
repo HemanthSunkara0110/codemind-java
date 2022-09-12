@@ -1,22 +1,19 @@
-import java.util.*;
-class pattern
+import java.util.Scanner;
+class main
 {
-  public static void main(String args[])
-	{
-	Scanner sc=new Scanner(System.in);
-	int R;
-	
-	R=sc.nextInt();
-	int k=R;
-	for(int i=1;i<=R;i++)
-	{
-		for(int j=1;j<=k;j++)
-		{
-		System.out.print(j);
-		
-		}
-		System.out.println();
-		k--;
-	}
-	}
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int n;
+        n=sc.nextInt();
+        for(int i=1;i<=n;i++)
+        {
+            for(int j=1;j<=n;j++)
+            {
+                System.out.print((char)(64+i)+" ");
+            }
+            System.out.println();
+        }
+        
+    }
 }
