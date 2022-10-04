@@ -1,11 +1,10 @@
-import java.util.Scanner;
-class Main
+import java.util.*;
+class circle
 {
     public static void main(String args[])
     {
-        int r;
-        Scanner s=new Scanner(System.in);
-        r=s.nextInt();
+        Scanner sc=new Scanner(System.in);
+        int r=sc.nextInt();
         double area=3.14*r*r;
         System.out.printf("%.2f",area);
     }
