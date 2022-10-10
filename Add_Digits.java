@@ -1,24 +1,23 @@
 import java.util.*;
-class add
+class Sample
 {
-    public static int Isadd(int num){
-        int cou=0;
-        while(num>0){
-            cou=cou+num%10;
-            num/=10;
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+
+        while(n>9)
+        {
+        int sum=0;
+        int rem=0;
+          while(n!=0)
+          {
+          rem=n%10;
+          sum+=rem;
+          n=n/10;
+          }
+         n=sum;
         }
-        if(cou>9){
-            Isadd(cou);
-        }
-        else{
-            System.out.println(cou);
-        }
-        return cou;
-    }
-    
-    public static void main(String args[]){
-        Scanner sc=new Scanner(System.in);
-        int num=sc.nextInt();
-        Isadd(num);
+        System.out.println(n);
     }
 }
