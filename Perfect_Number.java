@@ -1,26 +1,24 @@
 import java.util.*;
-class main
+class Sample
 {
-    public static int findFactor(int x)
-    {
-        int sum=0;
-        for (int i=1;i<=x/2;i++)
-        {
-            if(x%i==0)
-            sum=sum+i;
-        }
-        return sum;
-    }
     public static void main(String args[])
     {
-        Scanner sc=new Scanner(System.in);
-        int n,result;
-        n=sc.nextInt();
-        result=findFactor(n);
-        if(result==n)
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int sum=0;
+        int rem=0;
+       int temp=n;
+       for (int i=1;i<=n/2;i++)
+        {
+            if(n%i==0)
+            sum+=i;
+        }
+        if(temp==sum)
+        
         System.out.println("True");
         else
-        System.out.println("False");
+         System.out.println("False");
+    
         
     }
 }
