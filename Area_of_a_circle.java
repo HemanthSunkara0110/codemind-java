@@ -1,5 +1,5 @@
-import java.util.*;
-class circle
+import java.util.Scanner;
+class main
 {
     public static void main(String args[])
     {
