@@ -1,21 +1,19 @@
 import java.util.Scanner;
-class Main
-{
-    public static void main(String args[])
-    {
-        int n,a=0,b=1,c,count=3;
-        Scanner Sc=new Scanner(System.in);
-        n=Sc.nextInt();
-        c=a+b;
-        System.out.print(a+" "+b+" ");
-        while(count<=n)
-        {
-            c=a+b;
+public class main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int a=0;
+        int b=1;
+        int c=a+b;
+        int count=3;
+        System.out.print(a+" "+b+" "+c+" ");
+        while(count<n){
             a=b;
             b=c;
-            System.out.print(c+" ");
-            count++;
+            c=a+b;
+        System.out.print(c+" ");
+        count++;
         }
-        
     }
 }
