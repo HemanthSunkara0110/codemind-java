@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class primeornot{
+public class main{
     public static boolean isPrime(int n){
         int count=0;
         for(int i=2;i<=(int)Math.sqrt(n);i++){
@@ -15,8 +15,8 @@ public class primeornot{
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
         if(isPrime(n))
-        System.out.println("prime");
+        System.out.print("prime");
         else
-        System.out.println("not a prime");
+        System.out.print("not a prime");
     }
 }
