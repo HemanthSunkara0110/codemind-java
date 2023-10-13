@@ -1,38 +1,30 @@
-import java.util.*;
-class palindrome
-{
-	public static boolean ispalin(int n)
-	{
-		int d=(int)Math.log10(n);
-		int flag=0;
-		while(n>0)
-		{
-			if(n/(int)Math.pow(10,d)!=n%10)
-			{
-				flag=1;
-				break;
-			}
-			n=n%(int)Math.pow(10,d);
-			n=n/10;
-			d=d-2;
-		}
-		if(flag==1)
-			return false;
-
-			return true;	
-	}
-	public static void main(String args[])
-	{
-		Scanner s=new Scanner(System.in);
-		int t=s.nextInt();
-		while(t-->0)
-		{
-		    int n=s.nextInt();
-		    if(ispalin(n))
-		        System.out.println("True");
-		  else
-		       System.out.println("False"); 
-		}
-	
-	}
+import java.util.Scanner;
+public class palindrome{
+    public static boolean isPalin(int n){
+        int t=n;
+        int temp=0,r;
+        if(n<0)
+        return false;
+        else
+            while(n>0){
+                r=n%10;
+                temp=temp*10+r;
+                n=n/10;
+            }
+        if(t==temp)
+        return true;
+        else
+        return false;
+    }
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int t=sc.nextInt();
+        while(t-->0){
+            int n=sc.nextInt();
+        if(isPalin(n))
+        System.out.println("True");
+        else
+        System.out.println("False");
+        }
+    }
 }
