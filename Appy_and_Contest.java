@@ -1,5 +1,5 @@
 import java.util.*;
-class sol
+public class sol
 {
     public static int lcm(int a,int b)
     {
