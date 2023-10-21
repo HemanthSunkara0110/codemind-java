@@ -1,23 +1,20 @@
-import java.util.*;
-class Sample
-{
-    public static void main(String args[])
-    {
-        Scanner s=new Scanner(System.in);
-        int n=s.nextInt();
-         int k=s.nextInt();
-         int c=0;
-        int a[]=new int[n];
-        for(int i=0;i<n;i++)
-        {
-        a[i]=s.nextInt();
-    }
-       
-       
-        for(int i=0;i<n;i++)
-        {
-           if(a[i]%k!=0)
-           c++;
+import java.util.Scanner;
+public class main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+         int k=sc.nextInt();
+        int count=0;
+        int[] arr=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
         }
-        System.out.println(c);    }
+       
+        for(int i=0;i<n;i++){
+            
+            if(arr[i]%k!=0)
+            count++;
+        }
+        System.out.println(count);
+    }
 }
