@@ -1,11 +1,8 @@
-import java.util.*;
-class sample
-{
-    public static boolean isPrime(int n)
-    {
+import java.util.Scanner;
+public class main{
+    public static boolean isPrime(int n){
         int count=0;
-        for(int i=2;i<=(int)Math.sqrt(n);i++)
-        {
+        for(int i=2;i<=Math.sqrt(n);i++){
             if(n%i==0)
             count++;
         }
@@ -13,22 +10,19 @@ class sample
         return true;
         else
         return false;
+        
     }
-    public static void main(String args[])
-    {
+    public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
-        int a,b,c=0;
-        a=sc.nextInt();
-        b=sc.nextInt();
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int count=0;
         if(a==1)
         a=2;
-        for(int i=a;i<=b;i++)
-        {
+        for(int i=a;i<=b;i++){
             if(isPrime(i))
-            c++;
-            
+            count++;
         }
-        System.out.println(c);
+        System.out.println(count);
     }
-    
 }
