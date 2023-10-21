@@ -1,15 +1,12 @@
-import java.util.*;
-class SumofNumbers{
-public static void main(String[] args)
-{
-	Scanner sc=new Scanner(System.in);
-	int n=sc.nextInt();
-	int sum=0;
-	for(int i=1;i<=n;i++)
-	{
-		sum=sum+i;
-	}
-	System.out.println(sum);
-	sc.close();
-}
+import java.util.Scanner;
+public class main{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int sum=0;
+        for(int i=1;i<=a;i++){
+            sum += i;
+        }
+        System.out.println(sum);
+    }
 }
