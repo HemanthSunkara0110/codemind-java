@@ -1,7 +1,7 @@
-import java.util.*;
+import java.util.Scanner;
 public class countPalin{
-    public static boolean countPalindrome(int n){
-        int r,temp=0,t=n;
+    public static boolean isPalin(int n){
+        int temp=0,t=n,r;
         while(n>0){
             r=n%10;
             temp=temp*10+r;
@@ -17,11 +17,10 @@ public class countPalin{
         int n=sc.nextInt();
         int[] arr=new int[n];
         int count=0;
+        for(int i=0;i<n;i++)
+        arr[i]=sc.nextInt();
         for(int i=0;i<n;i++){
-            arr[i]=sc.nextInt();
-        }
-        for(int i=0;i<n;i++){
-            if(countPalindrome(arr[i]))
+            if(isPalin(arr[i]))
             count++;
         }
         System.out.println(count);
